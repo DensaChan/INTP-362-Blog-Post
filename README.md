@@ -13,7 +13,7 @@ There are many environments to practice Python. you could easily download the cl
 Lets get to you to write you first program and to see the difference between Java and Python in the most begginer code. To print hello world. (does this bring you back to your first programming class?).
 
 Java
-```xml
+```java
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -22,6 +22,6 @@ public class HelloWorld {
 ```
 
 Python
-```xml
+```python
 print("Hello, World!")
 ```
