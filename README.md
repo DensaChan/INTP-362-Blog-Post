@@ -145,7 +145,7 @@ P.S. Do you remember the difference between Arrays and ArrayLists? Great just ma
  
  Wow, Look how simple Pythong is compared to Java!
  
-### Methonds Vs Functions
+### Methods Vs Functions
 We know that a clean code is short, readable code. So creating methods or inline methods but in python known as functions are important. Everybody love clean code right??
 Lets quickly review the structure or how a method declaration in java would look like:
 ```Java
