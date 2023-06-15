@@ -11,7 +11,7 @@ Both language supports object-oriented programming. We are now masters of OOP in
 Lastly, python offers a collection of libaries for different use cases such as data anlysis such as NumPy or Pandas. Cute names ehhh??? 
 
 ### Environments (IDE)
-There are many environments to practice Python. you could easily download the classic notepad++ or use modern IDE's such as VS Code or a replica of Databricks which is Jupiter notebooks. In my second blog post, I will be using Jyuptier notebooks to show a demonstration of data cleaning and how we can simply manipulate tables, create aggregations and clean data to be digested for stakeholders to make data-driven decisions. Before we get into that, we are required to learn the basics. 
+There are many environments to practice Python. you could easily download the classic notepad++ or use modern IDE's such as VS Code or a replica of Databricks which is jupyter notebooks. In VS code, it is as simple as just downloading the python extention in the extention tab. So why did i mention jupyter  notebook/databricks. If being a data anlyst or data engineer, Jetbeans intoduce the adaption of SQL and  python together to manipluate data. As someone who has a background in data analytics, Our previous courses in SQL or evern PLSQL can be done much simpplier in python. Now it is beyond this blog on discussing what data anlaytic tools and their advatnages but in short, it is nice to see your results quickly than to run through a terminal. 
 
 ### Writeing your first program: Hello World
 Lets get to you to write you first program and to see the difference between Java and Python in the most begginer code. To print hello world. (does this bring you back to your first programming class?).
