@@ -327,4 +327,41 @@ This is just a brief introduction how to we can quickly learn python as we are J
 # INTP-362-Blog-Post-2
 
 ## Introducing Pandas and how to use it for data cleaning
-Within this repo, you will find a CSV file that will need to be converted into a excel file as per demostration
+Within this repo, you will find a CSV file that will need to be converted into an Excel file as per the demonstration. Now, there are a few methods to implement data analysis and multiple IDE's out there. VScode has a few extensions, databricks is was my personal choice as that was provide by my employer but it costs money. An open source you may want to look into is jupyter notebook. Everything you need to know on how to install jupyteer notebook is in their website here: https://jupyter.org/. 
+
+## What is Panda's Libary??
+Pandas is an open-source Python library widely used for data manipulation and analysis. It provides easy-to-use data structures and functions, primarily the DataFrame, which is designed to handle and work with structured data efficiently. The library is a fundamental tool for data scientists, analysts, and developers when dealing with data preprocessing, cleaning, exploration, and analysis tasks.
+
+### Key use cases and vocabularies: 
+
+DataFrame: The DataFrame is the central data structure in Pandas. It is a two-dimensional tabular data structure, similar to a spreadsheet or SQL table. DataFrames allow you to store and manipulate data with rows and columns, making it easy to work with datasets.
+
+Series: A Series is a one-dimensional labeled array, which is essentially a single column of data in a DataFrame. It is useful for working with single-variable data.
+
+Data Alignment: Pandas automatically aligns data based on labels, making it easy to perform operations on different datasets that share common indices.
+
+Data Cleaning: Pandas provides various functions for handling missing data, converting data types, removing duplicates, and other data cleaning tasks.
+
+Data Manipulation: You can filter, sort, group, pivot, and reshape data using Pandas, enabling you to transform data into a suitable format for analysis.
+
+Data Input/Output: Pandas supports reading and writing data from/to various file formats, such as CSV, Excel, SQL databases, and more.
+
+Integration with NumPy: Pandas is built on top of NumPy and seamlessly integrates with it. This integration allows you to perform advanced mathematical and statistical operations efficiently.
+
+Time Series Data: Pandas has built-in support for time series data, making it easier to handle and analyze temporal data.
+
+## How to install Pandas:
+```Python
+pip install pandas
+import pandas as pd
+```
+
+## Example of data cleaning in Pandas
+Save the CSV file as a Excel file on your local machine and change the following path to Excel file location 
+``` Python
+df = pd.read_excel(r"C:\Users\Densa\OneDrive\Documents\Pandas Tutorial\data.xlsx")
+df
+```
+So the following code allows us to see our data like you would in Excel. It will display all the columns and rows 
+![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/4f2af687-24e3-45ef-86e0-5946058e6817)
+
