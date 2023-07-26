@@ -456,4 +456,4 @@ plt.show()
 Results:
 ![image](https://github.com/DensaChan/INTP-362-Blog-Post/assets/78866745/3051a8b7-af6d-4a53-84d1-a2143cd4b56b)
 
-
+This is just a scratch of what a data scientist or data analyst would do for data cleaning. From my own personal experience, I worked with a dataset that consisted of millions of rows. You will also discover that time series be your worse nightmare. Hope you enjoyed this simple introduction to data analysis with Python and pandas! 
