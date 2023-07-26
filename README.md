@@ -355,6 +355,15 @@ Time Series Data: Pandas has built-in support for time series data, making it ea
 pip install pandas
 import pandas as pd
 ```
+You may also need to install dependencies in your terminal such as:
+```Python
+#to alllow ploting
+pip install matplotlib
+#to allow pandas
+pip install pandas xlrd
+#other dependencies
+pip install openpxl
+```
 
 ## Example of data cleaning in Pandas
 Save the CSV file as a Excel file on your local machine and change the following path to Excel file location 
@@ -406,13 +415,14 @@ results:
 
 ### Data Visulization 
 Let's take the following dataset from the previous data cleaning exercise and lets find the counts of paying customers and compare it to lets say a the customers who do not want to be contacted.
+in order to plot and allow the python to allow us to show a visual, we require the library: "matplotlib" which we named it with the alias or variable pit.
 ``` Python
 import pandas as pd
 # in order to plot and allow the python to allow us to show a visual, we require the library: "matplotlib" which we named it with the alias or variable pit.
 import matplotlib.pyplot as plt
 
-# Read the CSV file
-data = pd.read_csv("C:\Users\Densa\OneDrive\Documents\Pandas Tutorial\data.xlsx")
+# Read the Excel file
+data = pd.read_excel("C:\Users\Densa\OneDrive\Documents\Pandas Tutorial\data.xlsx")
 
 # Drop any empty columns
 data = data.dropna(axis=1, how='all')
@@ -443,5 +453,5 @@ plt.tight_layout()
 plt.show()
 ```
 
-in order to plot and allow the python to allow us to show a visual, we require the library: "matplotlib" which we named it with the alias or variable pit.
+
 
