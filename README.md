@@ -359,7 +359,7 @@ import pandas as pd
 ## Example of data cleaning in Pandas
 Save the CSV file as a Excel file on your local machine and change the following path to Excel file location 
 ``` Python
-df = pd.read_excel(r"C:\Users\Densa\OneDrive\Documents\Pandas Tutorial\data.xlsx")
+df = pd.read_excel("C:\Users\Densa\OneDrive\Documents\Pandas Tutorial\data.xlsx")
 df
 ```
 So the following code allows us to see our data like you would in Excel. It will display all the columns and rows 
@@ -403,4 +403,45 @@ df
 ```
 results:
 ![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/2793c850-2567-4299-8389-668c61c35d37)
+
+### Data Visulization 
+Let's take the following dataset from the previous data cleaning exercise and lets find the counts of paying customers and compare it to lets say a the customers who do not want to be contacted.
+``` Python
+import pandas as pd
+# in order to plot and allow the python to allow us to show a visual, we require the library: "matplotlib" which we named it with the alias or variable pit.
+import matplotlib.pyplot as plt
+
+# Read the CSV file
+data = pd.read_csv("C:\Users\Densa\OneDrive\Documents\Pandas Tutorial\data.xlsx")
+
+# Drop any empty columns
+data = data.dropna(axis=1, how='all')
+
+# Clean the data
+data['Phone_Number'] = data['Phone_Number'].str.replace(r'[^\d]', '', regex=True)  # Remove non-digit characters from phone numbers
+
+# Convert 'Paying Customer' and 'Do_Not_Contact' columns to boolean values
+data['Paying Customer'] = data['Paying Customer'].map({'Yes': True, 'No': False})
+data['Do_Not_Contact'] = data['Do_Not_Contact'].map({'Yes': True, 'No': False})
+
+# Count the number of paying customers and do-not-contact customers
+paying_customers = data['Paying Customer'].value_counts()
+do_not_contact = data['Do_Not_Contact'].value_counts()
+
+# Create a bar chart to visualize the counts
+fig, ax = plt.subplots(figsize=(8, 6))
+paying_customers.plot(kind='bar', ax=ax, color='b', alpha=0.7, label='Paying Customer')
+do_not_contact.plot(kind='bar', ax=ax, color='r', alpha=0.7, label='Do Not Contact')
+
+ax.set_xticklabels(['No', 'Yes'], rotation=0)
+ax.set_xlabel('Category')
+ax.set_ylabel('Count')
+ax.set_title('Paying Customers vs. Do Not Contact Customers')
+
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+in order to plot and allow the python to allow us to show a visual, we require the library: "matplotlib" which we named it with the alias or variable pit.
 
