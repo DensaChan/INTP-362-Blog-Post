@@ -322,3 +322,9 @@ if __name__ == "__main__":
  
 ### Summary
 This is just a brief introduction how to we can quickly learn python as we are Java Experts. Do you feel like we could have used Python than Java while we were in school?? Maybe there is a much deeper pool of Python but there are only so many hours in a day. So what's next? Let us have some fun and take off one of our previous assignments in our last semester course with algorithms and apply it in Python. I wonder if our hundreds of lines of code could be cut in half. Well, you just have to stay tuned and see.
+
+
+# INTP-362-Blog-Post-2
+
+## Introducing Pandas and how to use it for data cleaning
+Within this repo, you will find a CSV file that will need to be converted into a excel file as per demostration
