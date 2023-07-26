@@ -365,3 +365,42 @@ df
 So the following code allows us to see our data like you would in Excel. It will display all the columns and rows 
 ![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/4f2af687-24e3-45ef-86e0-5946058e6817)
 
+Let's say we notice a few duplicates in our data, thankfully pandas have a method like command that is able to identify duplicates and remove them
+``` Python
+df = df.drop_duplicates()
+df
+```
+This gives us the results of:
+![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/fce17c45-3ae0-4f51-af37-34171ac05509)
+It was able to find a duplication of Anakin Skywalker and removed him. Really, it should have just deleted Anakin as he was up to no good anyways in Star Wars 
+
+Commonly, spreadsheets or data always has useless columns, we can able clean by:
+``` Python
+df = df.drop(columns = "Not_Useful_column"
+df
+```
+
+this now removed that useless column called not_useful_column
+![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/78b800f6-34ca-40a0-9804-962adb8b7cac)
+
+Let's say we do not like how the address is written and we would like commas in between the address and city. Just like in Java "Split" is handy here
+in order for us to specifically target columns, we will need to identify which columns we want to make changes to by putting the column name inside [ ] of the variable df. 
+```  Python
+df[["Street_Address", "State", "Zip_Code"]] = df["Address"].str.split(',',2, expand=True)
+df
+```
+
+now take a look at the results in the address. We just changed everything in the entire column. Imagine if this dataset had over a million rows. The code is also much simpler than if we were to write SQL code. Imagine what writing that would have been like.
+![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/349f6f31-e4eb-4da4-8111-f77edad0a441)
+
+The last example here is a common field you may find in data analysis is cleaning up null values. We can now use a for loop as per the example in part 1 above to iterate through all rows in the column phone number to look for any nulls:
+``` Python
+for x in df.index:
+    if df.loc[x, "Phone_Number"] == '':
+        df.drop(x, inplace=True)
+
+df
+```
+results:
+![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/2793c850-2567-4299-8389-668c61c35d37)
+
