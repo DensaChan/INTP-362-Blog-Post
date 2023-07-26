@@ -453,5 +453,7 @@ plt.tight_layout()
 plt.show()
 ```
 
+Results:
+![image](https://github.com/DensaChan/INTP-362-Blog-Post/assets/78866745/3051a8b7-af6d-4a53-84d1-a2143cd4b56b)
 
 
