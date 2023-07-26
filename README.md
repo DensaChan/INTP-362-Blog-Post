@@ -410,7 +410,7 @@ for x in df.index:
 
 df
 ```
-results:
+
 ![image](https://github.com/DensaChan/INTP-362-Blog-Post-1/assets/78866745/2793c850-2567-4299-8389-668c61c35d37)
 
 ### Data Visulization 
@@ -453,7 +453,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-Results:
 ![image](https://github.com/DensaChan/INTP-362-Blog-Post/assets/78866745/3051a8b7-af6d-4a53-84d1-a2143cd4b56b)
 
 This is just a scratch of what a data scientist or data analyst would do for data cleaning. From my own personal experience, I worked with a dataset that consisted of millions of rows. You will also discover that time series be your worse nightmare. Hope you enjoyed this simple introduction to data analysis with Python and pandas! 
